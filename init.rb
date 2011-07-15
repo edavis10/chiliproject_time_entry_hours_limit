@@ -1,12 +1,14 @@
 require 'redmine'
 
 Redmine::Plugin.register :chiliproject_time_entry_hours_limit do
-  name 'Chiliproject Time Entry Hours Limit plugin'
-  author 'Author name'
-  description 'This is a plugin for ChiliProject'
-  version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  name 'Time Entry Hours Limit'
+  author 'Eric Davis'
+  url 'https://projects.littlestreamsoftware.com/projects/chiliproject_time_entry_hours_limit'
+  author_url 'http://www.littlestreamsoftware.com'
+  description 'A ChiliProject plugin that prevents users from clocking time to above a configured limit.'
+  version '0.1.0'
+
+  requires_redmine :version_or_higher => '1.0.0'
 
   settings(:partial => 'settings/time_entry_hours_limit',
            :default => {

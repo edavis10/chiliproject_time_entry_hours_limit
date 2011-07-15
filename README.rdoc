@@ -1,10 +1,10 @@
-= Time Entry Hours LImit
+= Time Entry Hours Limit
 
 Limit the amount of hours that can be logged to a single time entry.
 
 == Features
 
-TODO: fill in features
+* prevents users from clocking time to above a configured limit
 
 == Getting the plugin
 
@@ -17,7 +17,8 @@ A copy of the plugin can be downloaded from {Little Stream Software}[https://pro
 
 == Usage
 
-TODO: Add usage
+1. Configure the hour limit in Admin > Plugins > Configure
+2. (Optional) Give roles the permission of Time Tracking > "Enter hours over the system limit" if you would like to allow them to log above the limit
 
 == License
 
