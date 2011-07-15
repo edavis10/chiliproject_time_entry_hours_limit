@@ -89,12 +89,12 @@ class ActiveSupport::TestCase
   end
 
   def configure_plugin(configuration_change={})
-    Setting.plugin_TODO = {
-      
+    Setting.plugin_chiliproject_time_entry_hours_limit = {
+      "hour_limit" => '10'
     }.merge(configuration_change)
   end
 
   def reconfigure_plugin(configuration_change)
-    Settings['plugin_TODO'] = Setting['plugin_TODO'].merge(configuration_change)
+    Settings['plugin_chiliproject_time_entry_hours_limit'] = Setting['plugin_chiliproject_time_entry_hours_limit'].merge(configuration_change)
   end
 end
