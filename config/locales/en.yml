@@ -1,3 +1,2 @@
-# English strings go here for Rails i18n
 en:
-  my_label: "My label"
+  time_entry_hour_limit: Limit hours

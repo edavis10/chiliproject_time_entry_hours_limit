@@ -1,0 +1,7 @@
+<fieldset>
+  <p>
+    <%= content_tag(:label, l(:time_entry_hour_limit)) %>
+    <%= text_field_tag("settings[hour_limit]", @settings['hour_limit']) %> <%= l(:field_hours) %>
+  </p>
+</fieldset>
+
