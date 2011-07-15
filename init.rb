@@ -12,4 +12,8 @@ Redmine::Plugin.register :chiliproject_time_entry_hours_limit do
            :default => {
              'hour_limit' => '24'
            })
+
+  project_module :time_tracking do
+    permission :enter_hours_over_the_system_limit, {}
+  end
 end
